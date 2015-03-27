@@ -30,7 +30,7 @@
   </nav>
   <ul id="nav-mobile" class="side-nav fixed">
     <li class="logo">
-      <a href="/profile" class="brand-logo"><br><img src="<%= current_user.avatar %>" alt="" class="circle responsive-profile-img left-align z-depth-1" width="180" height="180"><%= current_user.name %></a></li>
+      <a href="/profile" class="brand-logo"><br><img src="<%= logged_in? ? current_user.avatar : '//placehold.it/215x215' %>" alt="" class="circle responsive-profile-img left-align z-depth-1" width="180" height="180"><%= logged_in? ? current_user.name : 'Guest' %></a></li>
     <div class="divider"></div>
     <li><a href="/browse" class="waves-effect"><i class="mdi-action-list"></i> Browse</a></li>
     <li><a href="/search" class="waves-effect"><i class="mdi-action-search"></i> Search</a></li>
