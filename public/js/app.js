@@ -12,7 +12,7 @@ var expertises = new Bloodhound({
 expertises.initialize();
 
 $(function() {
-    $('.validate').typeahead({
+    $('.typeahead').typeahead({
         highlight: true
     },{
         name: 'expertise',
@@ -20,11 +20,6 @@ $(function() {
         source: expertises.ttAdapter()
     });
 
-    $('.validate').bind('keypress', function(e) {
-        if(e.keyCode==13){
-            console.log("enter")
-        }
-    });
 });
 
 

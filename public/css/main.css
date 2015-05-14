@@ -12,63 +12,65 @@ main, header, footer {
     display: none !important;
 }
 
-
-
-.typeahead.tt-input {
-
-    width: 423px ;
+.search_bar {
+    position: absolute;
+    right: auto;
+}
+.search_bar .search_icon {
+    position: absolute;
+    right: 390px;
+    border: none;
+    background: url("/images/search_icon.png") center no-repeat;
+    text-indent: -999em;
+    border-radius: 0px;
     height: 40px;
-    font-size: 12px !important;
-    border: 2px solid #999999;
-    border-radius: 8px;
-    line-height: 30px;
+    width: 35px;
+
 }
 
+.typeahead.tt-input {
+    height: 40px;
+    width: 380px;
+    font-size: 24px ;
+    line-height: 30px;
+}
 
 .tt-query,
 
-.tt-hint {
-    position: fixed;
-    width: 423px;
-    height: 40px;
+.typeahead.tt-hint {
     font-size: 24px;
-    line-height: 30px;
-    border: 2px solid #ccc;
-    border-radius: 8px;
-    outline: none;
-    color: #999999;
+    height: 40px;
+    color: #999999 !important;
 }
 
  .tt-dropdown-menu {
-    width: 160px !important;
-    padding: 8px 0;
-    font-size: 24;
+    width: 380px;
+    padding: 8px;
+    font-size: 24px;
     background-color: #fff;
-    border: 2px solid #e0e0e0 !important;
+    border: 2px solid #e0e0e0;
 
 }
-/*
+
 .tt-suggestion {
     padding: 3px 10px;
-    font: Sans-Serif;
     font-size: 24px;
     line-height: 24px;
-}
-*/
-
-.validate.tt-input {
-    background-color: #eeeeee !important;
-    height: 30px !important;
 }
 
 .tt-cursor {
     color: #000000;
-    border-radius: 1px !important;
-    background-color: #81d4fa ;
+    border: none !important;
+    border-radius: 4px !important;
+    background-color: #cccccc;
 }
 
 .tt-suggestion p {
     margin: 0;
 }
 
-
+.footer {
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+}
